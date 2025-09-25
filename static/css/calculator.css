@@ -1,3 +1,91 @@
+/* Improved Graph Styles */
+.graph-container {
+    position: relative;
+    background: var(--display-bg);
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+}
+
+#graph-svg {
+    display: block;
+    background: var(--display-bg);
+}
+
+#function-path {
+    stroke: var(--primary-color);
+    stroke-width: 2;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.scale-marker {
+    stroke: rgba(255, 255, 255, 0.3);
+    stroke-width: 1;
+}
+
+.scale-text {
+    fill: var(--text-color);
+    font-size: 10px;
+    font-family: 'Roboto Mono', monospace;
+    opacity: 0.7;
+}
+
+#axis-x, #axis-y {
+    stroke: var(--text-color);
+    stroke-width: 2;
+    opacity: 0.8;
+}
+
+.axis-label {
+    fill: var(--text-color);
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+}
+
+/* Graph controls improvements */
+.graph-actions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.graph-actions .btn {
+    padding: 10px 15px;
+    font-size: 0.9rem;
+}
+
+/* Function examples styling */
+.function-examples {
+    margin-top: 15px;
+}
+
+.example-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn-example {
+    padding: 6px 12px;
+    font-size: 0.8rem;
+    background: var(--button-bg);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-example:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-1px);
+}
+
 /* ===== CSS VARIABLES & THEMES ===== */
 :root {
     --primary-color: #4a6fa5;
